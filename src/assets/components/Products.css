@@ -1,0 +1,76 @@
+.products-container {
+  padding: 30px;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1882ce, #0fc5dd);
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* Error */
+.error {
+  color: #ff1a1a;
+  font-weight: bold;
+}
+
+/* Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 18px;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(255, 20, 147, 0.4);
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  color: #c2185b;
+}
+
+.card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+  border-top: 6px solid #ff1493;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
